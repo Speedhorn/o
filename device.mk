@@ -17,6 +17,13 @@
 # Inherit proprietary vendor files
 $(call inherit-product, vendor/xiaomi/rosy/rosy-vendor.mk)
 
+PRODUCT_SOONG_NAMESPACES += \
+    $(LOCAL_PATH)
+
+
+PRODUCT_BOARD_PLATFORM := msm8996
+PRODUCT_USES_QCOM_HARDWARE := true
+
 # Overlays
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-lineage
