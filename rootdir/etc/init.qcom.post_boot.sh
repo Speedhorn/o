@@ -254,7 +254,7 @@ function configure_zram_parameters() {
         swapon /dev/block/zram0 -p 32758
 
         # Set swappiness to 100 for all targets
-        echo 100 > /proc/sys/vm/swappiness
+        #echo 100 > /proc/sys/vm/swappiness
     fi
 }
 
@@ -309,7 +309,7 @@ if [ "$ProductName" == "msm8996" ]; then
       echo 1 > /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
       echo 80640 > /sys/module/lowmemorykiller/parameters/vmpressure_file_min
 
-      configure_zram_parameters
+      #configure_zram_parameters
 
       configure_read_ahead_kb_values
 else
@@ -382,7 +382,7 @@ else
         echo 1 > /sys/module/lowmemorykiller/parameters/oom_reaper
     fi
 
-    configure_zram_parameters
+    #configure_zram_parameters
 
     configure_read_ahead_kb_values
 
