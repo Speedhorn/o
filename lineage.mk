@@ -17,9 +17,9 @@
 $(call inherit-product, device/xiaomi/rosy/full_rosy.mk)
 
 # Inherit some common LineageOS stuff.
-$(call inherit-product, vendor/aicp/config/common_full_phone.mk)
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
-PRODUCT_NAME := aicp_rosy
+PRODUCT_NAME := lineage_rosy
 BOARD_VENDOR := Xiaomi
 
 PRODUCT_GMS_CLIENTID_BASE := android-xiaomi
