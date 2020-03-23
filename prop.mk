@@ -132,7 +132,11 @@ vendor.vidc.enc.disable_bframes=1
 # Perf
 PRODUCT_PROPERTY_OVERRIDES += \
 ro.sys.fw.dex2oat_thread_count=4 \
-ro.vendor.extension_library=libqti-perfd-client.so
+ro.vendor.extension_library=libqti-perfd-client.so \
+dalvik.vm.boot-dex2oat-threads=8 \
+dalvik.vm.dex2oat-threads=4 \
+dalvik.vm.image-dex2oat-threads=4
+
 
 # Netmgrd
 PRODUCT_PROPERTY_OVERRIDES += \
