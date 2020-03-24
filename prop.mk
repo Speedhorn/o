@@ -97,7 +97,7 @@ dalvik.vm.heapsize=36m
 
 # Extra
 PRODUCT_PROPERTY_OVERRIDES += \
-debug.enable.gamed=0 \
+debug.enable.gamed=0
 
 
 # DRM
