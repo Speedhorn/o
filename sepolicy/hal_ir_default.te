@@ -1,2 +1,0 @@
-#============= hal_ir_default ==============
-allow hal_ir_default spidev_file:chr_file { open read write };

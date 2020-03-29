@@ -1,5 +1,5 @@
 #
-# Copyright (C) 2017 The LineageOS Project
+# Copyright (C) 2017-2018 The LineageOS Project
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -14,18 +14,4 @@
 # limitations under the License.
 #
 
-LOCAL_PATH := $(call my-dir)
-
-include $(CLEAR_VARS)
-
-LOCAL_SRC_FILES := \
-    DisplayEventReceiver.cpp
-
-LOCAL_SHARED_LIBRARIES := libgui
-LOCAL_MODULE := libshims_camera
-LOCAL_MODULE_CLASS := SHARED_LIBRARIES
-LOCAL_MODULE_TAGS := optional
-LOCAL_VENDOR_MODULE := true
-
-LOCAL_32_BIT_ONLY := true
-include $(BUILD_SHARED_LIBRARY)
+include $(call first-makefiles-under,$(call my-dir))
